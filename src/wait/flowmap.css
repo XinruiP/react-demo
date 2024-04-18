@@ -1,0 +1,16 @@
+.diagram-note {
+    background-color: rgba(66, 180, 21, 0.7);
+    color: White;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    animation: blink-animation 1s infinite alternate;
+  }
+
+  .needs-discussion:not(.djs-connection) .djs-visual > :nth-child(1) {
+    stroke: rgba(66, 180, 21, 0.7) !important; /* color elements as red */
+  }
+  @keyframes blink-animation {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}

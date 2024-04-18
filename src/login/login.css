@@ -1,0 +1,39 @@
+.loginbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 350px; /* 设置登录框的宽度 */
+    
+  }
+  
+ .box {
+    background-image: url('../assest/ba.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%; /* 容器宽度，可选 */
+    height: 100vh; /* 容器高度，可选 */
+  }
+  .loginbox > .ant-space {
+    display: flex; /* 使用 Flex 布局 */
+    flex-direction: column; /* 垂直排列子元素 */
+    gap: 10px; /* 子元素之间的间距 */
+  }
+  .login-input {
+    width: 100%; /* 输入框宽度填充父元素 */
+    height: 40px; /* 输入框高度 */
+  }
+  
+  .login-button {
+    width: 100%; /* 按钮宽度填充父元素 */
+    height: 40px; /* 按钮高度 */
+  }
+  .loginbox > .ant-space > * {
+    width: 100%; /* 子元素宽度填充父元素 */
+  }

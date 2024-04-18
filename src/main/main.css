@@ -1,0 +1,9 @@
+.navbar{
+    height: 100vh;
+}
+.mainbox{
+    display: flex;
+}
+.loginout:hover{
+    cursor: pointer;
+}
