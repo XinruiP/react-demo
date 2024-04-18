@@ -15,11 +15,7 @@ const Already = () => {
         setIdOfTask(idOfTask)
         setModl(true);
     };
-    const showModal2 = (processInstanceId,idOfTask) => {
-        setSelectedProcessId(processInstanceId)
-        setIdOfTask(idOfTask)
-        setModl2(true);
-    };
+    console.log(url);
     const columns = [
          {
             title: '流程实例id',

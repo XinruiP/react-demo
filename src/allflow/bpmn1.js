@@ -1,6 +1,6 @@
 import React,{useEffect}  from 'react';
 import BpmnJS from 'bpmn-js';
-const diagramUrl = 'http://182.168.2.144:9090/demo.bpmn';
+const diagramUrl = 'http://60.204.213.112:9090/demo.bpmn';
 const Bpmn1 = () => {
     useEffect(() => {
       const bpmnViewer = new BpmnJS({ container: '#canvas' });

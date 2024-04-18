@@ -6,7 +6,7 @@ const FlowMap = ({ isopen, setOpen, activity }) => {
     const containerRef = useRef(null); // 使用 useRef 创建容器元素的引用
     let diagramUrl = '';
     if (activity && activity.activityId && activity.activityId.includes("demo1")) {
-        diagramUrl = "http://192.168.2.144:9090/demo.bpmn"
+        diagramUrl = "http://60.204.213.112:9090/demo.bpmn"
     }
     const handleOk = () => {
         setOpen(false)

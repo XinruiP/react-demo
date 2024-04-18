@@ -27,14 +27,18 @@ const items = [
 ];
 const AllFlow = () => {
   const [current, setCurrent] = useState('1');
+  const data = localStorage.getItem("data");
+  const dataJson = JSON.parse(data)
+  const department = dataJson.department
   const onClick = (e) => {
     console.log('click ', e);
     setCurrent(e.key);
   };
   return (
     <>
-    <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} style={{width:700}}/>
-    { current ==='1' && <><Bpmn1/><Form1/></>}
+    <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+    { current ==='1' && <Bpmn1/>}
+    {current === '1' && department && department.includes("市场综合室+技术商务室") && <Form1/>}
     </>
   )
 };

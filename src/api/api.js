@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://192.168.2.144:1323"
+const url = "http://60.204.213.112:1323"
 // 登录接口
 export async function LoginApi(username, password) {
     return axios.post(`${url}/login`, {
